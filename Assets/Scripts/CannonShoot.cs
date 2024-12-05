@@ -10,12 +10,10 @@ public class CannonShoot : MonoBehaviour
 
     private void Update()
     {
-        if (activated)
-        {
+        if (activated) {
             GameObject bulletCreated = Instantiate(bullet, transform.position, transform.rotation);
             bulletCreated.GetComponent<Rigidbody>().AddRelativeForce(new Vector3(0, launchSpeed, 0));
             activated = false;
         }
     }
-
 }

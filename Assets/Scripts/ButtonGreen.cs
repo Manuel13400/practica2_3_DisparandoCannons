@@ -2,10 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GreenButton : MonoBehaviour
+public class ButtonGreen : MonoBehaviour
 {
     public CannonShoot shootBullet;
-
 
     private void OnMouseDown()
     {
@@ -13,5 +12,4 @@ public class GreenButton : MonoBehaviour
         shootBullet = c.GetComponent<CannonShoot>();
         shootBullet.activated = true;
     }
-
 }
