@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ButtonBlue : MonoBehaviour
+/*public class ButtonBlue : MonoBehaviour
 {
     public GameObject bullet;
     public CannonShoot randomSpeed;
@@ -10,20 +10,21 @@ public class ButtonBlue : MonoBehaviour
     public float randomSize;
     public int randomStrength;
 
-
-    private void Start()
+    void Start()
     {
         bullet.gameObject.transform.localScale = new Vector3(1, 1, 1);
         randomSpeed.launchSpeed = 700;
 
     }
 
-    private void OnMouseDown()
+    void OnMouseDown()
     {
         randomSize = Random.Range(1f, 3f);
         bullet.gameObject.transform.localScale = new Vector3 (randomSize, randomSize, randomSize);
+
         randomStrength = Random.Range(100, 1000);
         randomSpeed.launchSpeed = randomStrength;
 
     }
 }
+*/

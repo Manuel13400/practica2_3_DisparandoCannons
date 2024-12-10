@@ -7,7 +7,7 @@ public class TargetActions : MonoBehaviour
     public int bulletNumber = 0;
     public bool rotationActivated = false;
 
-    private void OnTriggerEnter(Collider collision)
+    void OnTriggerEnter(Collider collision)
     {
         if (collision.CompareTag("bullet"))
         {
@@ -28,7 +28,7 @@ public class TargetActions : MonoBehaviour
         }
     }
 
-    private void Update()
+    void Update()
     {
         if (rotationActivated)
         {
