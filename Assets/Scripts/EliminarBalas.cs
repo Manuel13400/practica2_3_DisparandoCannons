@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EliminarBalas : MonoBehaviour
 {
+    // Busca todos los objetos con el tag "bullet", los incluye en una lista y los elimina todos
     public GameObject[] balas;
 
     private void OnMouseDown()
@@ -14,6 +15,7 @@ public class EliminarBalas : MonoBehaviour
             Destroy(bala);
         }
 
+        // Llama al GameManager
         GameManager.ResetearBalas();
     }
 }
